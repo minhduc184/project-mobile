@@ -115,3 +115,19 @@ backPage.addEventListener('click',function(){
     getMoviesAPI(api_backPage)
     console.log(currentPage);
 });
+
+                /* --- Menu-Mobile --- */
+
+/* --- Bước 1: Truy cập phần tử --- */
+const btnOpen = document.querySelector('.btn-mobile-open');
+const ctnMobile = document.querySelector('#wrap-mobile');
+const btnClose = document.querySelector('.btn-close')
+
+/* --- Bước 2: Thêm event --- */
+btnOpen.addEventListener('click',function(){
+    ctnMobile.style.height = '100%';
+});
+
+btnClose.addEventListener('click',function(){
+    ctnMobile.style.height = '0';
+})

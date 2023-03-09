@@ -8,32 +8,92 @@
     <!-- Import Bootstrap -->
     <link rel="stylesheet" href="/lib/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/mobile.css">
+    <!-- Import fontawsome -->
+    <link rel="stylesheet" href="/lib/fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="/lib/fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="/lib/fontawesome-free-6.2.1-web/css/solid.css">
 </head>
 
 
 <body>
+  <div class="header-main">
+    <div class="container">
+      <div class="row">
 
-    <div class="wrap-form">
-        <form class="form">
-            <input type="text" placeholder="Search" class="input-form">
-        </form>
-    </div>
-
-    <div class="listing-product">
-        <div class="container">
-            <div class="row">
-            </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="logo">
+            <img src="/assets/img/logo1.png">
+          </div>
         </div>
+        
+        <div class="col-12 col-sm-8 col-md-8">  
+          <!-- Menu-desktop -->
+          <div class="menu">
+            <ul class="menu-main">
+              <li>Trang chủ</li>
+              <li>Phim đang chiếu</li>
+              <li>Lịch chiếu</li>
+              <li>Phim hoàn thành</li>
+              <li>Phim sắp hoàn thành</li>
+            </ul>
+          </div>
+          
+          <!-- Button-Mobile -->
+          <div class="wrap-btn">
+            <button class="btn-mobile-open">
+              <i class="fa-regular fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="pagi-listing">
-        <button class="next-page">
-            Next Page
-        </button>
-        <button class="back-page">
-            Back Page
-        </button>
+  <div class="wrap-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+          <form class="form">
+            <input type="text" placeholder="Search" class="input-form">
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="listing-product">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+
+  <div class="pagi-listing">
+    <button class="next-page">
+      Next Page
+    </button>
+    <button class="back-page">
+      Back Page
+    </button>
+  </div>
+
+  <!-- Menu Tablet + Moblie -->
+  <div id="wrap-mobile">
+    <button class="btn-close">X</button>
+    <ul class="menu-mobile">
+      <li>Trang chủ</li>
+      <li>Phim đang chiếu</li>
+      <li>Lịch chiếu</li>
+      <li>Phim hoàn thành</li>
+      <li>Phim sắp hoàn thành</li>
+    </ul>
+
+  </div>
+
+
+
+
+
 <!-- Import axios -->
 <script src="/lib/axios.min.js"></script>
 <!-- Import bootstrap -->
